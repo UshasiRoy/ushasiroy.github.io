@@ -32,15 +32,15 @@ https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0175309
 Zero-order ultrasensitivity : A study of criticality and fluctuations under the total quasi-steady state approximation in the linear noise regime. P. K. Jithinraj, UR, Manoj Gopalakrishnan. J. Theor. Biol. 344 (2014) 1-11.
 https://www.sciencedirect.com/science/article/abs/pii/S0022519313005419?via%3Dihub
 	
-###	Book Chapters
+### Book Chapters
 
-    Biochemical and Biophysical mechanisms underlying collective cell migration in cancer metastasis. UR*, Tyler Collins, Mohit K. Jolly, Parag Katira. Chapter 3 (Pages 77-112) In: Ian Y. Wong, Michelle R. Dawson (eds) Engineering and Physical Approaches to Cancer. Springer Nature - Current Cancer Research Series (2023). 
-	https://link.springer.com/chapter/10.1007/978-3-031-22802-5_3
-Complex Networks and Systems Biology. UR, Rajdeep Kaur Grewal, Soumen 	Roy. Chapter 7 				(Pages 129-150) In: Vikram Singh, Pawan K. Dhar. (eds) Systems and Synthetic Biology. 				Springer, Dordrecht (2015).
-https://link.springer.com/chapter/10.1007/978-94-017-9514-2_7
+	Biochemical and Biophysical mechanisms underlying collective cell migration in cancer metastasis. UR*, Tyler Collins, Mohit K. Jolly, Parag Katira. Chapter 3 (Pages 77-112) In: Ian Y. Wong, Michelle R. Dawson (eds) Engineering and Physical Approaches to Cancer. Springer Nature - Current Cancer Research Series (2023). 
+		https://link.springer.com/chapter/10.1007/978-3-031-22802-5_3
+	Complex Networks and Systems Biology. UR, Rajdeep Kaur Grewal, Soumen 	Roy. Chapter 7 				(Pages 129-150) In: Vikram Singh, Pawan K. Dhar. (eds) Systems and Synthetic Biology. 				Springer, Dordrecht (2015).
+	https://link.springer.com/chapter/10.1007/978-94-017-9514-2_7
 
 ### Conference Abstracts
 
-    Emergent Spatiotemporal Dynamics of Gene Regulatory Network motifs in different biological contexts. UR*. Bulletin of American Physical Society (2023).
-    <br/> Effects of cell-cell adhesion on collective migration of multicellular clusters. UR* and Andrew Mugler. Bulletin of American Physical Society (2020).
-    *   —   corresponding/co-corresponding author
+	Emergent Spatiotemporal Dynamics of Gene Regulatory Network motifs in different biological contexts. UR*. Bulletin of American Physical Society (2023). 
+	Effects of cell-cell adhesion on collective migration of multicellular clusters. UR* and Andrew Mugler. Bulletin of American Physical Society (2020).
+	*  corresponding/co-corresponding author
