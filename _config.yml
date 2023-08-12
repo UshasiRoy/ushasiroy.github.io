@@ -22,7 +22,7 @@ author: XYZABC 123456
 navbar-links:
   Team:
   Research:
-  Publications: publications
+  Publications: "publications"
   Join Us:
   News:
   Contact Us:
