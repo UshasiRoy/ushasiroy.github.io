@@ -1,3 +1,5 @@
+# Publications
+
 ## Under Preparation
 An integrated model of signal transduction and chemotaxis in E. coli: the impact of network noise and cell to cell variability. <ins>**UR***</ins> and Manoj Gopalakrishnan.
 
