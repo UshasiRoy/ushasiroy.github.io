@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Researcher</title>
+    <style>
+        /* Global styles */
+        :root {
+            --text-color: #333;
+            --light-bg: #f8f8f8;
+            --link-color: #2c6a9c;
+            --border-color: #ddd;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: "Palatino Linotype", Palatino, Georgia, serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            background-color: white;
+        }
+        
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: "Palatino Linotype", Palatino, Georgia, serif;
+            font-weight: normal;
+            margin: 1rem 0;
+            color: #333;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.3rem;
+            margin: 2rem 0 1rem 0;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        blockquote {
+            font-style: italic;
+            margin: 1.5rem 0;
+            padding: 0.5rem 1.5rem;
+            border-left: 3px solid var(--border-color);
+        }
+        
+        /* Layout */
+        header {
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .main-content {
+            flex: 2;
+            min-width: 65%;
+            padding-right: 2rem;
+        }
+        
+        .sidebar {
+            flex: 1;
+            min-width: 200px;
+            padding-left: 1rem;
+            border-left: 1px solid var(--border-color);
+        }
+        
+        /* Header styles */
+        .site-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            border: none;
+        }
+        
+        .site-subtitle {
+            font-size: 1.25rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        /* Navigation */
+        nav {
+            margin: 1rem 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin-right: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        nav ul li a {
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.95rem;
+            color: #444;
+        }
+        
+        /* Research items */
+        .research-item {
+            margin-bottom: 2rem;
+        }
+        
+        .research-item img {
+            display: block;
+            max-width: 300px;
+            margin-bottom: 1rem;
+        }
+        
+        /* Publication list */
+        .publication {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dotted var(--border-color);
+        }
+        
+        .publication:last-child {
+            border-bottom: none;
+        }
+        
+        .pub-authors {
+            font-style: italic;
+        }
+        
+        .pub-journal {
+            font-weight: bold;
+        }
+        
+        .pub-year {
+            color: #666;
+        }
+        
+        /* Sidebar styles */
+        .sidebar-item {
+            margin-bottom: 2rem;
+        }
+        
+        .sidebar-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .sidebar-item ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .profile-image {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        
+        /* Quote */
+        .quote-block {
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: var(--light-bg);
+            font-style: italic;
+        }
+        
+        .quote-attribution {
+            text-align: right;
+            margin-top: 0.5rem;
+            font-style: normal;
+        }
+        
+        /* Footer */
+        footer {
+            margin-top: 3rem;
+            padding: 1.5rem 0;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .main-content {
+                padding-right: 0;
+            }
+            
+            .sidebar {
+                margin-top: 2rem;
+                padding-left: 0;
+                border-left: none;
+                border-top: 1px solid var(--border-color);
+                padding-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Your Name</h1>
+        <div class="site-subtitle">Position | Department | Institution</div>
+        <nav>
+            <ul>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#software">Software</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <div class="quote-block">
+                "The scientist is not a person who gives the right answers, he's one who asks the right questions."
+                <div class="quote-attribution">— Claude Lévi-Strauss</div>
+            </div>
+            
+            <section id="about">
+                <h2>About</h2>
+                <p>Welcome to my academic website. I am a [Your Position] at [Your Institution] in the Department of [Your Department]. My research focuses on [Your Research Focus].</p>
+                
+                <p>My work bridges the gap between [Field 1] and [Field 2], with particular emphasis on developing new [methods/approaches/theories] for understanding [research topic]. I collaborate with researchers in [Collaborating Fields] to address fundamental questions about [Broader Research Area].</p>
+                
+                <p>Previously, I received my Ph.D. from [University] where I worked with [Advisor] on [Thesis Topic]. Prior to that, I completed my [Previous Degree] at [Previous Institution].</p>
+            </section>
+            
+            <section id="research">
+                <h2>Research</h2>
+                
+                <div class="research-item">
+                    <img src="/api/placeholder/400/300" alt="Research Image 1">
+                    <h3>Research Project 1</h3>
+                    <p>Description of your first major research project. Explain the significance of this work, the methodologies you use, and the impact it has on the field. Include key findings or ongoing questions being investigated.</p>
+                    <p><a href="#">Learn more →</a></p>
+                </div>
+                
+                <div class="research-item">
+                    <img src="/api/placeholder/400/300" alt="Research Image 2">
+                    <h3>Research Project 2</h3>
+                    <p>Description of your second major research project. Focus on the core research questions, why they matter, and how your approach is novel or significant. Mention any collaborators or funding agencies supporting this work.</p>
+                    <p><a href="#">Learn more →</a></p>
+                </div>
+                
+                <div class="research-item">
+                    <img src="/api/placeholder/400/300" alt="Research Image 3">
+                    <h3>Research Project 3</h3>
+                    <p>Description of your third major research project. Highlight the technical challenges, methodological innovations, or theoretical advances associated with this work. Include information about any databases, software, or resources developed.</p>
+                    <p><a href="#">Learn more →</a></p>
+                </div>
+            </section>
+            
+            <section id="publications">
+                <h2>Selected Publications</h2>
+                
+                <div class="publication">
+                    <div class="pub-authors">Your Name, Colleague A, Colleague B</div>
+                    <div class="pub-title"><a href="#">Title of your most recent paper goes here with proper capitalization</a></div>
+                    <div><span class="pub-journal">Journal Name</span>, Volume(Issue), Pages, <span class="pub-year">2025</span></div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-authors">Colleague C, Your Name, Colleague D, Colleague E</div>
+                    <div class="pub-title"><a href="#">Another important paper title with proper formatting and capitalization</a></div>
+                    <div><span class="pub-journal">Another Journal Name</span>, Volume(Issue), Pages, <span class="pub-year">2024</span></div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-authors">Your Name, Colleague F</div>
+                    <div class="pub-title"><a href="#">Title of a foundational paper in your research program</a></div>
+                    <div><span class="pub-journal">Prestigious Journal</span>, Volume(Issue), Pages, <span class="pub-year">2023</span></div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-authors">Colleague G, Colleague H, Your Name</div>
+                    <div class="pub-title"><a href="#">Another significant paper title with important findings</a></div>
+                    <div><span class="pub-journal">Field-Specific Journal</span>, Volume(Issue), Pages, <span class="pub-year">2022</span></div>
+                </div>
+                
+                <div class="publication">
+                    <div class="pub-authors">Your Name, Colleague I, Colleague J, Colleague K</div>
+                    <div class="pub-title"><a href="#">Title of paper that established a key method or finding</a></div>
+                    <div><span class="pub-journal">Methods Journal</span>, Volume(Issue), Pages, <span class="pub-year">2021</span></div>
+                </div>
+                
+                <p><a href="#">View complete publication list →</a></p>
+            </section>
+            
+            <section id="teaching">
+                <h2>Teaching</h2>
+                
+                <h3>Current Courses</h3>
+                <ul>
+                    <li><strong>COURSE 101:</strong> Introduction to Your Field — Fall 2025</li>
+                    <li><strong>COURSE 301:</strong> Advanced Topics in Your Specialty — Spring 2025</li>
+                </ul>
+                
+                <h3>Previous Courses</h3>
+                <ul>
+                    <li><strong>COURSE 250:</strong> Research Methods in Your Field — 2022-2024</li>
+                    <li><strong>COURSE 401:</strong> Graduate Seminar on Specific Topic — 2021-2023</li>
+                </ul>
+            </section>
+            
+            <section id="software">
+                <h2>Software & Resources</h2>
+                
+                <div class="research-item">
+                    <h3>Software Tool 1</h3>
+                    <p>Description of a software tool, database, or resource you've developed. Explain what it does, who might use it, and how it advances research in your field. Include information about availability, licensing, and how to cite it.</p>
+                    <p><a href="#">Download / Access →</a></p>
+                </div>
+                
+                <div class="research-item">
+                    <h3>Data Repository</h3>
+                    <p>Description of a data repository or collection you maintain. Specify the types of data available, how they were collected or generated, and ways researchers can use these resources for their own work.</p>
+                    <p><a href="#">Access Repository →</a></p>
+                </div>
+            </section>
+        </div>
+        
+        <div class="sidebar">
+            <div class="sidebar-item">
+                <img src="/api/placeholder/400/500" alt="Your Photo" class="profile-image">
+            </div>
+            
+            <div class="sidebar-item">
+                <h3>Contact</h3>
+                <p>Your Name<br>
+                Department Name<br>
+                Institution Name<br>
+                Street Address<br>
+                City, State ZIP</p>
+                <p>Email: your.email@institution.edu<br>
+                Phone: (123) 456-7890</p>
+            </div>
+            
+            <div class="sidebar-item">
+                <h3>Lab Location</h3>
+                <p>Building Name, Room Number<br>
+                Institution Name<br>
+                City, State</p>
+            </div>
+            
+            <div class="sidebar-item">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Google Scholar Profile</a></li>
+                    <li><a href="#">ORCID</a></li>
+                    <li><a href="#">ResearchGate</a></li>
+                    <li><a href="#">Institutional Repository</a></li>
+                    <li><a href="#">Lab Website</a></li>
+                    <li><a href="#">Department Page</a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-item">
+                <h3>News</h3>
+                <ul>
+                    <li><strong>May 2025:</strong> New paper published in [Journal]</li>
+                    <li><strong>April 2025:</strong> Received [Grant/Award] funding</li>
+                    <li><strong>March 2025:</strong> Presenting at [Conference]</li>
+                    <li><strong>February 2025:</strong> New lab member joined</li>
+                </ul>
+                <p><a href="#">More news →</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        <p>Last updated: May 2025</p>
+    </footer>
+</body>
+</html>
