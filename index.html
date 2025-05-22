@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Researcher</title>
+    <title>Dr. Ushasi Roy | Physicist</title>
     <style>
         /* Global styles */
         :root {
@@ -170,7 +170,7 @@
         
         /* Publication list */
         .publication {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             padding-bottom: 1rem;
             border-bottom: 1px dotted var(--border-color);
         }
@@ -181,6 +181,11 @@
         
         .pub-authors {
             font-style: italic;
+            margin-bottom: 0.25rem;
+        }
+        
+        .pub-title {
+            margin-bottom: 0.25rem;
         }
         
         .pub-journal {
@@ -257,14 +262,14 @@
 </head>
 <body>
     <header>
-        <h1 class="site-title">Your Name</h1>
-        <div class="site-subtitle">Position | Department | Institution</div>
+        <h1 class="site-title">Dr. Ushasi Roy</h1>
+        <div class="site-subtitle">DST-INSPIRE Faculty Fellow | Department of Physics | IISER Pune</div>
         <nav>
             <ul>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#software">Software</a></li>
+                <li><a href="#presentations">Presentations</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -279,35 +284,38 @@
             
             <section id="about">
                 <h2>About</h2>
-                <p>Welcome to my academic website. I am a [Your Position] at [Your Institution] in the Department of [Your Department]. My research focuses on [Your Research Focus].</p>
+                <p>Welcome to my academic website. I am a DST-INSPIRE Faculty Fellow at the Indian Institute of Science Education and Research (IISER), Pune, in the Department of Physics. My research focuses on curiosity-driven research on The Physics of Living Systems, encompassing Stochastic Methods, Nonequilibrium Statistical Physics, Complex Systems, Soft Matter, and Quantitative Systems Biology.</p>
                 
-                <p>My work bridges the gap between [Field 1] and [Field 2], with particular emphasis on developing new [methods/approaches/theories] for understanding [research topic]. I collaborate with researchers in [Collaborating Fields] to address fundamental questions about [Broader Research Area].</p>
+                <p>My work bridges the gap between physics and biology, with particular emphasis on developing new computational and theoretical approaches for understanding spatiotemporal dynamics in biological systems. I collaborate with researchers in systems biology, soft matter physics, and computational biology to address fundamental questions about gene regulatory networks, cellular migration, and pattern formation.</p>
                 
-                <p>Previously, I received my Ph.D. from [University] where I worked with [Advisor] on [Thesis Topic]. Prior to that, I completed my [Previous Degree] at [Previous Institution].</p>
+                <p>Previously, I completed my Ph.D. from IIT Madras where I worked with Prof. Manoj Gopalakrishnan on "Intrinsic Noise in the Biochemical Sensory Pathway of Escherichia coli and its Implications." I also held postdoctoral positions at Purdue University (with Dr. Andrew Mugler) and IISc Bangalore (with Dr. Mohit Kumar Jolly).</p>
             </section>
             
             <section id="research">
                 <h2>Research</h2>
                 
                 <div class="research-item">
-                    <img src="/api/placeholder/400/300" alt="Research Image 1">
-                    <h3>Research Project 1</h3>
-                    <p>Description of your first major research project. Explain the significance of this work, the methodologies you use, and the impact it has on the field. Include key findings or ongoing questions being investigated.</p>
-                    <p><a href="#">Learn more →</a></p>
+                    <img src="/api/placeholder/400/300" alt="Gene Regulatory Networks">
+                    <h3>Spatiotemporal Dynamics of Gene Regulatory Networks</h3>
+                    <p>Investigation of how gene regulatory network motifs create spatiotemporal patterns in biological systems. This work explores the implications of inherent nonlinearities and stochasticities, with particular focus on genetic toggle switches and their role in cellular decision-making processes.</p>
                 </div>
                 
                 <div class="research-item">
-                    <img src="/api/placeholder/400/300" alt="Research Image 2">
-                    <h3>Research Project 2</h3>
-                    <p>Description of your second major research project. Focus on the core research questions, why they matter, and how your approach is novel or significant. Mention any collaborators or funding agencies supporting this work.</p>
-                    <p><a href="#">Learn more →</a></p>
+                    <img src="/api/placeholder/400/300" alt="Cell Migration">
+                    <h3>Computational Modeling of Multicellular Migration</h3>
+                    <p>Development of computational models to understand how cell-cell adhesion affects collective migration of multicellular clusters. This research has shown that intermediate adhesion maximizes migration velocity, providing insights into cancer metastasis and tissue development.</p>
                 </div>
                 
                 <div class="research-item">
-                    <img src="/api/placeholder/400/300" alt="Research Image 3">
-                    <h3>Research Project 3</h3>
-                    <p>Description of your third major research project. Highlight the technical challenges, methodological innovations, or theoretical advances associated with this work. Include information about any databases, software, or resources developed.</p>
-                    <p><a href="#">Learn more →</a></p>
+                    <img src="/api/placeholder/400/300" alt="Bacterial Chemotaxis">
+                    <h3>Stochastic Analysis of Bacterial Chemotaxis</h3>
+                    <p>Theoretical and computational studies of noise and fluctuations in bacterial chemotaxis networks, particularly in E. coli. This work employs path-integral formalism and master equation approaches to understand how biochemical noise affects bacterial navigation.</p>
+                </div>
+                
+                <div class="research-item">
+                    <img src="/api/placeholder/400/300" alt="EMT and Cancer">
+                    <h3>Epithelial-Mesenchymal Transition in Cancer</h3>
+                    <p>Application of Random Matrix Theory and statistical physics approaches to characterize epithelial-mesenchymal transition during cancer metastatic invasion, focusing on understanding cellular plasticity and decision-making mechanisms.</p>
                 </div>
             </section>
             
@@ -315,121 +323,151 @@
                 <h2>Selected Publications</h2>
                 
                 <div class="publication">
-                    <div class="pub-authors">Your Name, Colleague A, Colleague B</div>
-                    <div class="pub-title"><a href="#">Title of your most recent paper goes here with proper capitalization</a></div>
-                    <div><span class="pub-journal">Journal Name</span>, Volume(Issue), Pages, <span class="pub-year">2025</span></div>
+                    <div class="pub-authors">Aditi Ajith Pujar, Arnab Barua, Partha Sarathi Dey, Divyoj Singh, <strong>Ushasi Roy</strong>, Mohit Kumar Jolly, Haralampos Hatzikirou</div>
+                    <div class="pub-title"><a href="#">Microenvironmental entropy dynamics analysis reveals novel insights into Notch-Delta-Jagged decision-making mechanism</a></div>
+                    <div><span class="pub-journal">iScience</span> 27(9), 110569, <span class="pub-year">2024</span></div>
                 </div>
                 
                 <div class="publication">
-                    <div class="pub-authors">Colleague C, Your Name, Colleague D, Colleague E</div>
-                    <div class="pub-title"><a href="#">Another important paper title with proper formatting and capitalization</a></div>
-                    <div><span class="pub-journal">Another Journal Name</span>, Volume(Issue), Pages, <span class="pub-year">2024</span></div>
+                    <div class="pub-authors">Priya Chakraborty, Mohit Kumar Jolly, <strong>Ushasi Roy</strong>, Sayantari Ghosh</div>
+                    <div class="pub-title"><a href="#">Spatio-temporal Pattern Formation due to Host-Circuit Interplay in Gene Expression Dynamics</a></div>
+                    <div><span class="pub-journal">Chaos, Solitons and Fractals</span> 167, 112995, <span class="pub-year">2023</span></div>
                 </div>
                 
                 <div class="publication">
-                    <div class="pub-authors">Your Name, Colleague F</div>
-                    <div class="pub-title"><a href="#">Title of a foundational paper in your research program</a></div>
-                    <div><span class="pub-journal">Prestigious Journal</span>, Volume(Issue), Pages, <span class="pub-year">2023</span></div>
+                    <div class="pub-authors"><strong>Ushasi Roy</strong>, Divyoj Singh, Navin Vincent, Chinmay Haritas, Mohit Kumar Jolly</div>
+                    <div class="pub-title"><a href="#">Spatiotemporal Patterning enabled by Gene Regulatory Networks</a></div>
+                    <div><span class="pub-journal">ACS Omega</span> 8(4), 3713–3725, <span class="pub-year">2023</span></div>
                 </div>
                 
                 <div class="publication">
-                    <div class="pub-authors">Colleague G, Colleague H, Your Name</div>
-                    <div class="pub-title"><a href="#">Another significant paper title with important findings</a></div>
-                    <div><span class="pub-journal">Field-Specific Journal</span>, Volume(Issue), Pages, <span class="pub-year">2022</span></div>
+                    <div class="pub-authors">Michael Vennettilli, Soutick Saha, <strong>Ushasi Roy</strong>, Andrew Mugler</div>
+                    <div class="pub-title"><a href="#">Precision of Protein Thermometry</a> (Editor's Suggestion)</div>
+                    <div><span class="pub-journal">Physical Review Letters</span> 127, 098102, <span class="pub-year">2021</span></div>
                 </div>
                 
                 <div class="publication">
-                    <div class="pub-authors">Your Name, Colleague I, Colleague J, Colleague K</div>
-                    <div class="pub-title"><a href="#">Title of paper that established a key method or finding</a></div>
-                    <div><span class="pub-journal">Methods Journal</span>, Volume(Issue), Pages, <span class="pub-year">2021</span></div>
+                    <div class="pub-authors"><strong>Ushasi Roy</strong> and Andrew Mugler</div>
+                    <div class="pub-title"><a href="#">Intermediate adhesion maximizes migration velocity of multicellular clusters</a></div>
+                    <div><span class="pub-journal">Physical Review E</span> 103, 032410, <span class="pub-year">2021</span></div>
                 </div>
                 
-                <p><a href="#">View complete publication list →</a></p>
+                <div class="publication">
+                    <div class="pub-authors"><strong>Ushasi Roy</strong> and Manoj Gopalakrishnan</div>
+                    <div class="pub-title"><a href="#">Ultrasensitivity and fluctuations in the Barkai-Leibler model of chemotaxis receptors in Escherichia coli</a></div>
+                    <div><span class="pub-journal">PLoS ONE</span> 12(4), e0175309, <span class="pub-year">2017</span></div>
+                </div>
+                
+                <p><a href="https://scholar.google.com/citations?user=SCHOLAR_ID">View complete publication list on Google Scholar →</a></p>
             </section>
             
             <section id="teaching">
                 <h2>Teaching</h2>
                 
-                <h3>Current Courses</h3>
+                <h3>Current Courses at IISER Pune</h3>
                 <ul>
-                    <li><strong>COURSE 101:</strong> Introduction to Your Field — Fall 2025</li>
-                    <li><strong>COURSE 301:</strong> Advanced Topics in Your Specialty — Spring 2025</li>
+                    <li><strong>PH3234:</strong> Statistical Mechanics I (January - April 2025) — 110 BSMS, MSc. (QTech), Ph.D. and Integrated Ph.D. students</li>
                 </ul>
                 
                 <h3>Previous Courses</h3>
                 <ul>
-                    <li><strong>COURSE 250:</strong> Research Methods in Your Field — 2022-2024</li>
-                    <li><strong>COURSE 401:</strong> Graduate Seminar on Specific Topic — 2021-2023</li>
+                    <li><strong>PH6592:</strong> Modular Course on Introduction to the Physics of Living Systems (February - April 2024) — Designed and executed as the primary instructor</li>
                 </ul>
+                
+                <h3>Teaching Assistant Experience (IIT Madras, 2013-2018)</h3>
+                <ul>
+                    <li><strong>PH 5080:</strong> Statistical Physics (M.Sc.)</li>
+                    <li><strong>PH 2070:</strong> Introduction to Biological Physics (B.Tech./M.Tech./Dual Degree)</li>
+                    <li><strong>PH 1010:</strong> Physics-I Mathematical Physics and Classical Mechanics (B.Tech.)</li>
+                    <li><strong>PH 1020:</strong> Physics-II Electrodynamics (B.Tech.)</li>
+                </ul>
+                
+                <h3>Student Mentoring</h3>
+                <p>Currently mentoring multiple BSMS, MS, and PhD students at IISER Pune on projects related to gene regulatory networks, cellular migration, and statistical physics approaches to biological systems.</p>
             </section>
             
-            <section id="software">
-                <h2>Software & Resources</h2>
+            <section id="presentations">
+                <h2>Selected Presentations</h2>
                 
-                <div class="research-item">
-                    <h3>Software Tool 1</h3>
-                    <p>Description of a software tool, database, or resource you've developed. Explain what it does, who might use it, and how it advances research in your field. Include information about availability, licensing, and how to cite it.</p>
-                    <p><a href="#">Download / Access →</a></p>
-                </div>
+                <h3>Recent Invited Talks</h3>
+                <ul>
+                    <li><strong>Physics of Cells & Tissues (PoCT-3.0)</strong> — IISc Bangalore (February 2025)</li>
+                    <li><strong>Active Soft Matter: Cell Biology in Motion</strong> — Institute of Physics, London, UK (September 2024)</li>
+                    <li><strong>Statphys28 IUPAP Conference</strong> — Tokyo, Japan (August 2023)</li>
+                    <li><strong>Physics Colloquium</strong> — IISER Pune (October 2023)</li>
+                </ul>
                 
-                <div class="research-item">
-                    <h3>Data Repository</h3>
-                    <p>Description of a data repository or collection you maintain. Specify the types of data available, how they were collected or generated, and ways researchers can use these resources for their own work.</p>
-                    <p><a href="#">Access Repository →</a></p>
-                </div>
+                <h3>Recent Conference Presentations</h3>
+                <ul>
+                    <li><strong>8th Edwards Symposium</strong> — Isaac Newton Institute, Cambridge, UK (September 2024)</li>
+                    <li><strong>PLM16 (Physics of Living Matter)</strong> — Marseille, France (September 2022)</li>
+                    <li><strong>ECMTB 2022</strong> — Heidelberg, Germany (September 2022)</li>
+                </ul>
             </section>
         </div>
         
         <div class="sidebar">
             <div class="sidebar-item">
-                <img src="/api/placeholder/400/500" alt="Your Photo" class="profile-image">
+                <img src="/api/placeholder/300/400" alt="Dr. Ushasi Roy" class="profile-image">
             </div>
             
             <div class="sidebar-item">
                 <h3>Contact</h3>
-                <p>Your Name<br>
-                Department Name<br>
-                Institution Name<br>
-                Street Address<br>
-                City, State ZIP</p>
-                <p>Email: your.email@institution.edu<br>
-                Phone: (123) 456-7890</p>
+                <p>Dr. Ushasi Roy<br>
+                A-354, Physics, Main Academic Building<br>
+                Indian Institute of Science Education and Research (IISER)<br>
+                Dr. Homi Bhabha Road<br>
+                Pune - 411008, Maharashtra, India</p>
+                <p>Email: <a href="mailto:ushasi@iiserpune.ac.in">ushasi@iiserpune.ac.in</a><br>
+                Alt Email: <a href="mailto:royushasi@gmail.com">royushasi@gmail.com</a><br>
+                Phone: +91-20-2590 8383 (Office)<br>
+                Mobile: +91-9163268846</p>
             </div>
             
             <div class="sidebar-item">
-                <h3>Lab Location</h3>
-                <p>Building Name, Room Number<br>
-                Institution Name<br>
-                City, State</p>
+                <h3>Research Interests</h3>
+                <p>Physics of Living Systems<br>
+                • Stochastic Methods<br>
+                • Nonequilibrium Statistical Physics<br>
+                • Complex Systems<br>
+                • Soft Matter<br>
+                • Quantitative Systems Biology</p>
             </div>
             
             <div class="sidebar-item">
-                <h3>Quick Links</h3>
+                <h3>Academic Links</h3>
                 <ul>
                     <li><a href="#">Google Scholar Profile</a></li>
                     <li><a href="#">ORCID</a></li>
                     <li><a href="#">ResearchGate</a></li>
-                    <li><a href="#">Institutional Repository</a></li>
-                    <li><a href="#">Lab Website</a></li>
-                    <li><a href="#">Department Page</a></li>
+                    <li><a href="https://www.iiserpune.ac.in/faculty/physics/ushasi-roy">IISER Pune Faculty Page</a></li>
                 </ul>
             </div>
             
             <div class="sidebar-item">
-                <h3>News</h3>
+                <h3>Recent News</h3>
                 <ul>
-                    <li><strong>May 2025:</strong> New paper published in [Journal]</li>
-                    <li><strong>April 2025:</strong> Received [Grant/Award] funding</li>
-                    <li><strong>March 2025:</strong> Presenting at [Conference]</li>
-                    <li><strong>February 2025:</strong> New lab member joined</li>
+                    <li><strong>February 2025:</strong> Invited talk at PoCT-3.0, IISc Bangalore</li>
+                    <li><strong>January 2025:</strong> Teaching Statistical Mechanics I</li>
+                    <li><strong>September 2024:</strong> Presented at Edwards Symposium, Cambridge</li>
+                    <li><strong>2024:</strong> New publication in iScience</li>
                 </ul>
-                <p><a href="#">More news →</a></p>
+            </div>
+            
+            <div class="sidebar-item">
+                <h3>Honors & Awards</h3>
+                <ul>
+                    <li>DST-INSPIRE Faculty Award (2023-present)</li>
+                    <li>C.V. Raman Postdoctoral Fellowship (2020-2022)</li>
+                    <li>First Prize, PhysiCell Hackathon (2021)</li>
+                    <li>#365IndianWomenInSTEM (2021)</li>
+                </ul>
             </div>
         </div>
     </div>
     
     <footer>
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2025 Dr. Ushasi Roy. All Rights Reserved.</p>
         <p>Last updated: May 2025</p>
     </footer>
 </body>
